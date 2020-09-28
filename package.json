@@ -1,0 +1,22 @@
+{
+  "name": "data-structure",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix"
+  },
+  "devDependencies": {
+    "gts": "^2.0.2",
+    "typescript": "^3.8.3",
+    "@types/node": "^13.11.1"
+  }
+}
