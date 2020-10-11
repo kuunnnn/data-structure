@@ -2,8 +2,7 @@
   "name": "data-structure",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "type": "module",
   "files": [
     "dist"
   ],
@@ -12,11 +11,17 @@
   "scripts": {
     "clean": "gts clean",
     "compile": "tsc",
-    "fix": "gts fix"
+    "fix": "gts fix",
+    "fmt": "npx prettier --write '**/*.{ts,js,md}'",
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
     "gts": "^2.0.2",
-    "typescript": "^3.8.3",
-    "@types/node": "^13.11.1"
+    "@types/node": "^13.11.1",
+    "@types/jest": "^26.0.4",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.8.3"
   }
 }
